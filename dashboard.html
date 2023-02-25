@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher's Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onunload="logout()">
+    <div class="navbar">
+      <div class="title">
+        <a href="#"> Teacher Portal</a>
+      </div>
+      <div class="links">
+        <a href="./index.html" id="signupLink">Sign Up</a>
+        <a href="./login.html" id="loginLink">Login</a>
+      </div>
+    </div>
+
+    <div class="signup">
+      <div class="signup-title">
+        <h6>Teachers Dashboard</h6>
+      </div>
+      <div id="welcome">
+      </div>
+      <br />
+      <div class="signUpForm">
+        <h3>Teachers Dashboard</h3>
+        <form>
+          <div class="password">
+            <input
+              type="text"
+              name="OldPassword"
+              id="OldPassword"
+              placeholder="Old Password"
+            />
+          </div>
+          <div class="password">
+            <input
+              type="text"
+              name="NewPassword"
+              id="NewPassword"
+              placeholder="New Password"
+            />
+          </div>
+          <div class="repassword">
+            <input
+              type="text"
+              name="confirmNewPassword"
+              id="confirmNewPassword"
+              placeholder="Confirm  New Password"
+            />
+          </div>
+          <div class="signupbutton1">
+           
+            <input
+              type="button"
+              class="button1"
+              value="Change"
+              onclick="changePassword()"
+            />
+            <br />
+            <input
+              type="button"
+              class="button1"
+              value="Logout"
+              onclick="logout()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
